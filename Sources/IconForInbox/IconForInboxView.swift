@@ -9,12 +9,13 @@ public struct IconForInboxView: View {
       let frameWidth = geometryReader.size.width
 
       ZStack {
-        Color(red: 0.5, green: 0.5, blue: 0.5)
+        Color(.black)
 
-        Image(systemName: "tray")
+        Image(systemName: "tray.full")
           .resizable()
-          .scaledToFit()
-          .frame(width: frameWidth * 0.7)
+          .frame(width: frameWidth * 0.45, height: frameWidth * 0.38)
+          .foregroundColor(.white)
+          .offset(x: -frameWidth * 0.15, y: frameWidth * 0.15)
       }
     }
   }
